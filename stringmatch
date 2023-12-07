@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class stringMatch {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the input string:");
+        String inputString = sc.nextLine();
+        System.out.println("Enter the sequence to search for:");
+        String sequence = sc.nextLine();
+        boolean result = inputString.contains(sequence);
+        if (result) {
+            System.out.println("The given string contains the specified sequence of char values.");
+        } else {
+            System.out.println("The given string does not contain the specified sequence of char values.");
+        }
+
+        sc.close();
+    }
+}
